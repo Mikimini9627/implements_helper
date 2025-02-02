@@ -5,4 +5,4 @@ rmdir /s /q implements_helper\__pycache__
 
 python setup.py sdist
 python setup.py bdist_wheel
-twine upload --repository testpypi dist/*
+twine upload --repository pypi dist/*
