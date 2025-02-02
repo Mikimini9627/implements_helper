@@ -1,1 +1,3 @@
-__version__ = '1.0.1'
+from .utility_methods import *
+
+__version__ = '1.0.4'

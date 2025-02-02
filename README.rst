@@ -8,9 +8,10 @@ implements_helper
 
 .. code-block:: python
 
-    from implements_helper import *
+    import implements_helper
 
-    # 準備中...
+    # プロキシリスト取得
+    proxy_list = implements_helper.get_proxy_list()
 
 --------
 必要要件
