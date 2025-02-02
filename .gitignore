@@ -1,0 +1,8 @@
+implements_helper/__pycache__/
+__pycache__/
+build/
+dist/
+implements_helper.egg-info/
+docs/_build/
+docs/_templates/
+.vscode/launch.json
