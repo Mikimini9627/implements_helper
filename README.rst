@@ -3,18 +3,18 @@ implements_helper
 =====================
 
 --------
-Žg—p•û–@
+ä½¿ç”¨æ–¹æ³•
 --------
 
 .. code-block:: python
 
     import implements_helper
 
-    # ƒvƒƒLƒVƒŠƒXƒgŽæ“¾
+    # ãƒ—ãƒ­ã‚­ã‚·ãƒªã‚¹ãƒˆå–å¾—
     proxy_list = implements_helper.get_proxy_list()
 
 --------
-•K—v—vŒ
+å¿…è¦è¦ä»¶
 --------
 * numpy >=1.26.4,<2.0.0
 * python-dateutil >=2.9.0.post0,<3.0.0
@@ -25,7 +25,7 @@ implements_helper
 * ruff >=0.8.6,<0.9.0
 
 ----------------
-ƒCƒ“ƒXƒg[ƒ‹•û–@
+ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ–¹æ³•
 ----------------
 
 .. code-block:: console

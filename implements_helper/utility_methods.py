@@ -20,8 +20,11 @@ def print_log(text : str) -> None:
         なし
     '''
 
-    # yyyy/MM/dd HH:mm:ss 形式のタイムスタンプを伴って出力
-    print(str((datetime.datetime.now(datetime.UTC) + datetime.timedelta(hours=9)).strftime('%Y/%m/%d %H:%M:%S')) + " " + text)
+    try:
+        # yyyy/MM/dd HH:mm:ss 形式のタイムスタンプを伴って出力
+        print(str((datetime.datetime.now(datetime.UTC) + datetime.timedelta(hours=9)).strftime('%Y/%m/%d %H:%M:%S')) + " " + text)
+    except Exception:
+        pass
 
 def split_list(target : list, split_count : int) -> list:
     '''概要
