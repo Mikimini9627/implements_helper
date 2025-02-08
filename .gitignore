@@ -8,3 +8,4 @@ docs/_templates/
 .vscode/launch.json
 poetry.lock
 .venv/
+.ruff_cache
