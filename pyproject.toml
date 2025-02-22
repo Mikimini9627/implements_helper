@@ -1,13 +1,25 @@
 [project]
 name = "implements-helper"
-version = "1.0.5"
-description = ""
+version = "1.0.7"
+description = "Python実装時に利用できるユーティリティ群"
+readme = "README.rst"
 authors = [
     {name = "Mikimini9627"}
 ]
-readme = "README.rst"
 requires-python = ">=3.12"
-dependencies = [
+dependencies = []
+classifiers = [
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3.12',
+]
+
+[project.urls]
+Homepage = "https://github.com/Mikimini9627/implements_helper"
+Repository = "https://github.com/Mikimini9627/implements_helper"
+
+[dependency-groups]
+dev = [
     "numpy (==1.26.4,<2.0.0)",
     "python-dateutil (>=2.9.0.post0,<3.0.0)",
     "bs4 (>=0.0.2,<0.0.3)",
@@ -15,20 +27,4 @@ dependencies = [
     "lxml (>=5.3.0,<6.0.0)",
     "useragent-changer (>=0.3.2,<0.4.0)",
     "ruff (>=0.8.6,<0.9.0)"
-]
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.poetry]
-description = "Python実装時に利用できるユーティリティ群"
-license = "MIT License"
-homepage = "https://github.com/Mikimini9627/implements_helper"
-repository = "https://github.com/Mikimini9627/implements_helper"
-readme = "README.rst"
-classifiers = [
-    'Intended Audience :: Developers',
-    'License :: OSI Approved :: MIT License',
-    'Programming Language :: Python :: 3.12',
 ]
