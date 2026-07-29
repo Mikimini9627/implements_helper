@@ -44,20 +44,24 @@ def split_list(target : list, split_count : int) -> list:
             分割したリスト
     '''
 
-    split_list = None
+    result = None
 
     try:
+        # 分割数が正の整数でない場合はエラーとする
+        if split_count <= 0:
+            raise ValueError("split_count は 1 以上を指定してください")
+
         # 1ブロックのサイズを計算する
         one_block_count = math.ceil(len(target) / split_count)
 
         # 分割したリストを返却する
-        split_list = [target[index: index + one_block_count] for index in range(0, len(target), one_block_count)]
+        result = [target[index: index + one_block_count] for index in range(0, len(target), one_block_count)]
 
     except Exception:
         print_log(traceback.format_exc())
-    
+
     finally:
-        return split_list
+        return result
 
 def get_proxy_list(get_only_one : bool = False) -> list:
     '''概要
@@ -97,9 +101,6 @@ def get_proxy_list(get_only_one : bool = False) -> list:
 
             # td要素取得
             td_data = tr.find_all("td")
-
-            # コード
-            td_data[2].text
 
             # IPアドレス
             ip = td_data[0].text
