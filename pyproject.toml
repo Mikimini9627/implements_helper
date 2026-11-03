@@ -3,20 +3,22 @@ name = "implements-helper"
 version = "1.0.9"
 description = "Python実装時に利用できるユーティリティ群"
 readme = "README.rst"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
     {name = "Mikimini9627"}
 ]
 requires-python = ">=3.12"
 dependencies = [
     "requests (>=2.32.3,<3.0.0)",
-    "bs4 (>=0.0.2,<0.0.3)",
-    "lxml (>=5.3.0,<6.0.0)",
+    "beautifulsoup4 (>=4.12.0,<5.0.0)",
+    "lxml (>=5.3.0,<7.0.0)",
     "useragent-changer (>=0.3.2,<0.4.0)",
 ]
 classifiers = [
     'Intended Audience :: Developers',
-    'License :: OSI Approved :: MIT License',
     'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
 ]
 
 [project.urls]
@@ -25,7 +27,16 @@ Repository = "https://github.com/Mikimini9627/implements_helper"
 
 [dependency-groups]
 dev = [
-    "numpy (==1.26.4,<2.0.0)",
-    "python-dateutil (>=2.9.0.post0,<3.0.0)",
-    "ruff (>=0.8.6,<0.9.0)"
+    "ruff (>=0.8.6)",
 ]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 140
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
