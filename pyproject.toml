@@ -1,6 +1,6 @@
 [project]
 name = "implements-helper"
-version = "1.0.9"
+version = "1.1.0"
 description = "Python実装時に利用できるユーティリティ群"
 readme = "README.rst"
 license = "MIT"
